@@ -181,10 +181,11 @@ function App() {
           </form>
         </div>
       </div>
-      <button className="text-white md:text-1xl hover:bg-gray-400 hover:text-gray-900 fixed top-0 right-0 m-4 bg-gray-900 p-2 rounded-md shadow-md">
+      <button className="text-white md:text-1xl hover:bg-sky-400 hover:text-gray-900 fixed top-0 right-0 m-4 bg-sky-500 p-2 rounded-md shadow-md">
         Login
         <span aria-hidden="true">→</span>
       </button>
+
     </>
   );
 }
