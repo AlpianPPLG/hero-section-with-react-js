@@ -58,11 +58,11 @@ function App() {
             About
           </h1>
           <div className="flex justify-center">
-            <img
+            {/* <img
               src="src/img/tech-stack.png"
               alt="Logo"
               className="w-32 h-32 mt-4"
-            />
+            /> */}
           </div>
           <p className="mt-6 text-lg leading-8 text-white">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
