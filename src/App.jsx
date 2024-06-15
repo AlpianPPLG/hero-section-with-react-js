@@ -1,3 +1,5 @@
+import "./App.css";
+
 function App() {
   return (
     <>
@@ -10,22 +12,25 @@ function App() {
       </div>
       <nav className="hidden md:flex justify-center items-center px-4 py-2 bg-gradient-to-r from-gray-900 to-gray-800">
         <div className="space-x-4">
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#home" className="text-white hover:text-gray-300">
             Home
           </a>
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#about" className="text-white hover:text-gray-300">
             About
           </a>
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#services" className="text-white hover:text-gray-300">
             Services
           </a>
-          <a href="#" className="text-white hover:text-gray-300">
+          <a href="#contact" className="text-white hover:text-gray-300">
             Contact
           </a>
         </div>
       </nav>
       <div className="md:hidden"></div>
-      <div className="text-center flex items-center justify-center h-screen bg-gray-900">
+      <div
+        id="home"
+        className="text-center flex items-center justify-center h-screen bg-gray-900"
+      >
         <div className="max-w-md">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Data to enrich your online business
@@ -44,20 +49,39 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="md:hidden"></div>
-      <div className="text-center flex items-center justify-center h-screen bg-gray-900">
+      <div
+        id="about"
+        className="text-center flex flex-col items-center justify-center h-screen bg-gray-900"
+      >
         <div className="max-w-md">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             About
           </h1>
+          <div className="flex justify-center">
+            <img
+              src="src/img/logos.svg"
+              alt="Logo"
+              className="w-32 h-32 mt-4"
+            />
+          </div>
           <p className="mt-6 text-lg leading-8 text-white">
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.
           </p>
+          <a
+            href="https://tailwindcss.com/"
+            className="text-xl font-semibold leading-6 text-white hover:text-gray-200 mt-6 block"
+          >
+            Learn more
+            <span aria-hidden="true">→</span>
+          </a>
         </div>
       </div>
-      <div className="text-center flex items-center justify-center h-screen bg-gray-900">
+      <div
+        id="services"
+        className="text-center flex items-center justify-center h-screen bg-gray-900"
+      >
         <div className="max-w-md">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Our Services
@@ -124,7 +148,10 @@ function App() {
           </ul>
         </div>
       </div>
-      <div className="text-center flex items-center justify-center h-screen bg-gray-900">
+      <div
+        id="contact"
+        className="text-center flex items-center justify-center h-screen bg-gray-900"
+      >
         <div className="max-w-md">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Contact Us
@@ -185,9 +212,9 @@ function App() {
         Login
         <span aria-hidden="true">→</span>
       </button>
-
     </>
   );
 }
+
 
 export default App;
