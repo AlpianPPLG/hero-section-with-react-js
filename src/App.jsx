@@ -274,6 +274,36 @@ function App() {
                   </div>
                 </div>
               </li>
+              <li className="mt-5">
+                <div className="flex">
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
+                      <svg
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <div className="ml-4">
+                    <div className="text-lg leading-7 font-semibold text-white">
+                      Very satisfactory service! I was very impressed with their
+                      professionalism and quality of work.{" "}
+                    </div>
+                    <div className="mt-1 text-sm text-gray-600">
+                      Jane Smith, Marketing Manager at XYZ Corp.
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
