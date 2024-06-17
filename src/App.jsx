@@ -1,3 +1,5 @@
+// import { motion, useScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import "./App.css";
 
 const BackToTopIcon = () => (
@@ -50,70 +52,133 @@ function App() {
         </div>
       </nav>
       <div className="md:hidden"></div>
-      <div
+      <motion.div
         id="home"
         className="text-center flex items-center justify-center h-screen bg-gray-900"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <div className="max-w-md">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <motion.h1
+            className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          >
             Data to enrich your online business
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-white">
+          </motion.h1>
+          <motion.p
+            className="mt-6 text-lg leading-8 text-white"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          >
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.
-          </p>
-          <button className="bg-white hover:bg-gray-200 text-indigo-600 font-bold py-2 px-4 rounded mt-4 mr-4">
+          </motion.p>
+          <motion.button
+            className="bg-white hover:bg-gray-200 text-indigo-600 font-bold py-2 px-4 rounded mt-4 mr-4"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
+          >
             Get Started
-          </button>
-          <button className="text-xl font-semibold leading-6 text-white hover:text-gray-200 mt-4">
+          </motion.button>
+          <motion.button
+            className="text-xl font-semibold leading-6 text-white hover:text-gray-200 mt-4"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+          >
             Learn more
             <span aria-hidden="true">→</span>
-          </button>
+          </motion.button>
         </div>
-      </div>
+      </motion.div>
+
       <div
         id="about"
         className="text-center flex flex-col items-center justify-center h-screen bg-gray-900"
       >
         <div className="max-w-md">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+          >
             About
-          </h1>
+          </motion.h1>
           <div className="flex justify-center">
             {/* <img
-              src="src/img/tech-stack.png"
-              alt="Logo"
-              className="w-32 h-32 mt-4"
-            /> */}
+        src="src/img/tech-stack.png"
+        alt="Logo"
+        className="w-32 h-32 mt-4"
+      /> */}
           </div>
-          <p className="mt-6 text-lg leading-8 text-white">
+          <motion.p
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="mt-6 text-lg leading-8 text-white"
+          >
             Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
             lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
             fugiat aliqua.
-          </p>
-          <a
+          </motion.p>
+          <motion.a
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            viewport={{ once: true }}
             href="https://tailwindcss.com/"
             className="text-xl font-semibold leading-6 text-white hover:text-gray-200 mt-6 block"
           >
             Learn more
             <span aria-hidden="true">→</span>
-          </a>
+          </motion.a>
         </div>
       </div>
-      <div
+
+      <motion.div
         id="services"
         className="text-center flex items-center justify-center h-screen bg-gray-900"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
       >
         <div className="max-w-md">
-          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
+          <motion.h1
+            className="text-4xl font-bold tracking-tight text-white sm:text-6xl"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             Our Services
-          </h1>
-          <p className="mt-6 text-lg leading-8 text-white">
+          </motion.h1>
+          <motion.p
+            className="mt-6 text-lg leading-8 text-white"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             We offer a wide range of services to help your business grow and
             succeed.
-          </p>
-          <ul className="mt-8 space-y-4 text-left text-white">
+          </motion.p>
+          <motion.ul
+            className="mt-8 space-y-4 text-left text-white"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+          >
             <li className="flex items-start">
               <span className="flex-shrink-0 mr-2">
                 <svg
@@ -168,12 +233,26 @@ function App() {
               </span>
               <span>Search Engine Optimization (SEO)</span>
             </li>
-          </ul>
+          </motion.ul>
         </div>
-      </div>
-      <div id="testimony" className="bg-gray-900 py-16">
+      </motion.div>
+
+      <motion.div
+        id="testimony"
+        className="bg-gray-900 py-16"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="lg:text-center">
+          <motion.div
+            className="lg:text-center"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">
               Testimonials
             </h2>
@@ -183,9 +262,14 @@ function App() {
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               See what our satisfied clients have to say about our services.
             </p>
-          </div>
-
-          <div className="mt-10">
+          </motion.div>
+          <motion.div
+            className="mt-10"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+          >
             <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
               <li>
                 <div className="flex">
@@ -237,10 +321,10 @@ function App() {
                   </div>
                   <div className="ml-4">
                     <div className="text-lg leading-7 font-semibold text-white">
-                      The best solution for your work needs!
+                      Excellent customer service and high-quality results!
                     </div>
                     <div className="mt-1 text-sm text-gray-600">
-                      John Doe, Software Engineer
+                      Jane Smith, Manager of Globex Corp.
                     </div>
                   </div>
                 </div>
@@ -266,10 +350,10 @@ function App() {
                   </div>
                   <div className="ml-4">
                     <div className="text-lg leading-7 font-semibold text-white">
-                      Highly recommended for all your web needs!
+                      Good service and high quality work!
                     </div>
                     <div className="mt-1 text-sm text-gray-600">
-                      Jane Smith, Marketing Manager at XYZ Corp.
+                      Jany, Software Engineer
                     </div>
                   </div>
                 </div>
@@ -295,22 +379,27 @@ function App() {
                   </div>
                   <div className="ml-4">
                     <div className="text-lg leading-7 font-semibold text-white">
-                      Very satisfactory service! I was very impressed with their
-                      professionalism and quality of work.{" "}
+                      Outstanding service and high-quality work{" "}
                     </div>
                     <div className="mt-1 text-sm text-gray-600">
-                      Jane Smith, Marketing Manager at XYZ Corp.
+                      William Jane, Head of Marketing
                     </div>
                   </div>
                 </div>
               </li>
+              {/* Rest of the code... */}
             </ul>
-          </div>
+          </motion.div>
         </div>
-      </div>
-      <div
+      </motion.div>
+
+      <motion.div
         id="contact"
         className="text-center flex items-center justify-center h-screen bg-gray-900"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
       >
         <div className="max-w-md">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -367,7 +456,8 @@ function App() {
             </button>
           </form>
         </div>
-      </div>
+      </motion.div>
+
       <footer className="bg-gray-800 py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between">
@@ -434,6 +524,7 @@ function App() {
               </div>
             </div>
           </div>
+
           <div className="mt-8 border-t border-gray-700 pt-8">
             <p className="text-gray-400 text-center">
               © 2024 Your Company. All rights reserved.
@@ -441,10 +532,12 @@ function App() {
           </div>
         </div>
       </footer>
+
       <button className="text-white md:text-1xl hover:bg-sky-400 hover:text-gray-900 fixed top-0 right-0 m-4 bg-sky-500 p-2 rounded-md shadow-md">
         Login
         <span aria-hidden="true">→</span>
       </button>
+
       <button
         className="text-white hover:bg-sky-400 hover:text-gray-900 fixed bottom-4 right-4 bg-sky-500 p-2 rounded-md shadow-md"
         onClick={scrollToTop}
