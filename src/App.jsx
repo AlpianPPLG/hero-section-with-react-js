@@ -1,4 +1,3 @@
-// import { motion, useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import "./App.css";
 
@@ -26,7 +25,7 @@ function App() {
   return (
     <>
       <div className="flex justify-between items-center px-4 py-2 md:hidden bg-gradient-to-r bg-gray-900">
-        <div className="space-y-1 cursor-pointer">
+        <div className="space-y-1 cursor-pointer mt-5">
           <div className="w-6 h-0.5 bg-white sm:w-8 sm:h-1"></div>
           <div className="w-6 h-0.5 bg-white sm:w-8 sm:h-1"></div>
           <div className="w-6 h-0.5 bg-white sm:w-8 sm:h-1"></div>
